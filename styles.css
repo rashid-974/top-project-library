@@ -205,6 +205,7 @@ main {
 #your-projects {
     margin: 5px 5px 5px 20px;
     padding: 10px;
+    min-width: 1318px;
 }
 
 #project-cards-grp {
@@ -285,6 +286,7 @@ main {
     position: sticky;
     top: 0;
     height: 100vh;
+    max-width: 331px;
 }
 
 #announcements-card-grp, #trending-card-grp {
@@ -426,4 +428,14 @@ input:focus, textarea:focus {
     font-size: 15px;
     min-width: 100px;
     padding-left:10px;
+    cursor: pointer;
+}
+
+#add-new-form button:hover {
+    background-color: #e9bf77;
+
+}
+
+.project-card.read {
+  border-color: green;
 }
