@@ -35,7 +35,7 @@
                     <h2>Vivy (@v1vy)</h2>
                 </div>
                 <div id="action-btns">
-                    <button class="action-btn">New</button>
+                    <button class="action-btn" id="add-new-manga">New</button>
                     <button class="action-btn">Upload</button>
                     <button class="action-btn">Share</button>
                 </div>
@@ -86,6 +86,35 @@
         </div>
     </div>
     <main>
+        <dialog id="form-dialog">
+            <div id="inner-dialog-div">
+                <form action="" id="add-new-form">
+                    <div class="form-input-grp">
+                        <label for="title-input">Title:</label>
+                        <input type="text" id="title-input">
+                    </div>
+                    <div class="form-input-grp">
+                        <label for="author-input">Author:</label>
+                        <input type="text" id="author-input">
+                    </div>
+                
+                    <div class="form-input-grp">
+                        <label for="desc-input">Description:</label>
+                        <textarea name="" id="desc-input"></textarea>
+                    </div>
+                    <div class="form-input-grp">
+                        <label for="image-link-input">Image Link:</label>
+                        <input type="link" id="image-link-input">
+                    </div>
+                    <div class="form-input-grp">
+                        <label for="link-input">Link:</label>
+                        <input type="link" id="link-input">
+                    </div>
+                    <button type="submit">Add</button>
+                </form>
+                <div id="dialog-img"></div>
+            </div>
+        </dialog>
         <div id="your-projects">
             <h2>Your List</h2>
             <div id="project-cards-grp">
@@ -164,5 +193,6 @@
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
