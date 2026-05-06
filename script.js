@@ -54,7 +54,7 @@ function Book(title, author, desc, image, link) {
 
 function addBookToLibrary(title, author = "null", desc = "null", image = "", link) {
   const newBook = new Book(title, author, desc, image, link);
-  myLibrary.push(newBook);
+  myLibrary.unshift(newBook);
   saveLibrary();
 }
 
@@ -138,5 +138,6 @@ cardsGrp.addEventListener("click", (e) => {
 
 
 imageLinkInput.addEventListener("input", () => {
+    dialogImg.innerHTML = "";
     dialogImg.innerHTML += `<img src="${imageLinkInput.value}">`
 })

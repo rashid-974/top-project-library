@@ -121,6 +121,7 @@ header svg {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #370617;
 }
 
 #notification-profile-pic img {
@@ -145,6 +146,7 @@ header svg {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #370617;
 }
 
 #profile-pic img {
